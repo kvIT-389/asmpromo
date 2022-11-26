@@ -1,13 +1,16 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  /* font-size: 1.25em; */
   color: #0b1d57;
+}
+a {
+  color: #646566;
+  text-decoration: none;
 }
 header, main, footer {
   padding: 0.6em;
 }
-header, #skills-section {
+header, #skills-section, footer {
   background-color: #f6fafc;
 }
 header {
@@ -106,4 +109,38 @@ main {
 }
 .card > h3 {
   text-align: center;
+}
+#partners-section > h2 {
+  text-align: center;
+}
+#partners-section > #partners-links {
+  display: flex;
+}
+#partners-section a {
+  flex-basis: 300px;
+  height: 150px;
+  margin: 1.2em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  transition: opacity 200ms ease-out;
+}
+#partners-section a:hover {
+  opacity: 1;
+}
+#partners-section #p1 {
+  background-image: url("../img/rkit.png");
+}
+#partners-section #p2 {
+  background-image: url("../img/ispsystem.png");
+}
+#partners-section #p3 {
+  background-image: url("../img/yandex.png");
+}
+#partners-section #p4 {
+  background-image: url("../img/en+group.png");
+}
+#partners-section #p5 {
+  background-image: url("../img/1ps.png");
 }
