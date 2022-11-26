@@ -14,3 +14,11 @@ header > * {
 .headers > * {
   margin: 0;
 }
+main {
+  text-align: justify;
+  text-justify: inter-word;
+}
+#about-section ul > li {
+  line-height: 1.5em;
+  padding: 0 0.1em;
+}
