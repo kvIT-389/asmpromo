@@ -1,6 +1,15 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #413e66;
+}
+header, main, footer {
+  padding: 0.6em;
+}
 header {
   display: flex;
   align-items: center;
+  background-color: #f5f8fd;
 }
 header > * {
   margin: 0.7em;
@@ -18,7 +27,21 @@ main {
   text-align: justify;
   text-justify: inter-word;
 }
+#about-section ul {
+  padding: 0;
+  list-style-type: none;
+}
 #about-section ul > li {
   line-height: 1.5em;
   padding: 0 0.1em;
+}
+#about-section ul > li::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/check.png);
+  background-size: contain;
+  background-position: center center;
+  width: 1.1em;
+  height: 1.1em;
+  margin-right: 0.5em;
 }
