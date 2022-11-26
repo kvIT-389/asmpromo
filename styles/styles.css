@@ -71,6 +71,39 @@ main {
 .card:hover {
   transform: scale(1.1);
 }
+.card > .icon {
+  width: 4em;
+  height: 4em;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card#apply > .icon {
+  background-color: #fce5f3;
+  background-image: url("../img/chart.png");
+}
+.card#design > .icon {
+  background-color: #fff0da;
+  background-image: url("../img/design.png");
+}
+.card#use > .icon {
+  background-color: #ccfff8;
+  background-image: url("../img/globe.png");
+}
+.card#develop > .icon {
+  background-color: #dafdd3;
+  background-image: url("../img/code.png");
+}
+.card#research > .icon {
+  background-color: #e1eeff;
+  background-image: url("../img/research.png");
+}
+.card#evaluate > .icon {
+  background-color: #ecebff;
+  background-image: url("../img/time.png");
+}
 .card > h3 {
   text-align: center;
 }
