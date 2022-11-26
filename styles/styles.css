@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  align-items: center;
+}
+header > * {
+  margin: 0.7em;
+}
+.headers {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.headers > * {
+  margin: 0;
+}
