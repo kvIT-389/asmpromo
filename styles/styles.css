@@ -1,15 +1,18 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #413e66;
+  /* font-size: 1.25em; */
+  color: #0b1d57;
 }
 header, main, footer {
   padding: 0.6em;
 }
+header, #skills-section {
+  background-color: #f6fafc;
+}
 header {
   display: flex;
   align-items: center;
-  background-color: #f5f8fd;
 }
 header > * {
   margin: 0.7em;
@@ -44,4 +47,30 @@ main {
   width: 1.1em;
   height: 1.1em;
   margin-right: 0.5em;
+}
+#skills-section {
+  padding: 1.5em 0;
+}
+#skills-section > h2{
+  text-align: center;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  margin: 1.2em;
+  padding: 1em;
+  border-radius: 0.8em;
+  background-color: white;
+  box-shadow: 0 0.2em 0.5em #e6e6ee;
+  flex-basis: 280px;
+  transition: transform 250ms ease-out;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card > h3 {
+  text-align: center;
 }
