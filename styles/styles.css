@@ -7,20 +7,34 @@ a {
   color: #646566;
   text-decoration: none;
 }
-header, #about-section, footer {
-  padding: 0.6em;
+header, footer,
+#about-section, #partners-section {
+  padding: 0.8em;
 }
-header, #skills-section, footer {
-  background-color: #f6fafc;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
 }
-header {
+.flex {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-header > * {
-  margin: 0.7em;
+.h-center {
+  text-align: center;
+}
+header, footer,
+#skills-section {
+  background-color: #f6fafc;
+}
+header > .container {
+  justify-content: left;
+}
+header img {
+  margin: 0.5em 0;
 }
 .headers {
+  margin-left: 1em;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -54,11 +68,7 @@ main {
 #skills-section {
   padding: 1.5em 0;
 }
-#skills-section > h2{
-  text-align: center;
-}
 .cards-container {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -68,11 +78,11 @@ main {
   border-radius: 0.8em;
   background-color: white;
   box-shadow: 0 0.2em 0.5em #e6e6ee;
-  flex-basis: 280px;
+  flex-basis: 360px;
   transition: transform 250ms ease-out;
 }
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 .card > .icon {
   width: 4em;
@@ -107,54 +117,33 @@ main {
   background-color: #ecebff;
   background-image: url("../img/time.png");
 }
-.card > h3 {
-  text-align: center;
-}
-#partners-section > h2 {
-  text-align: center;
-}
-#partners-section > #partners-links {
-  display: flex;
+#partners-section #partners-container {
+  flex-wrap: wrap;
 }
 #partners-section a {
-  flex-basis: 300px;
-  height: 150px;
-  margin: 1.2em;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  flex-basis: 350px;
+  padding: 2.2em;
+  border-radius: 0.5em;
   opacity: 0.6;
   transition: opacity 200ms ease-out;
 }
+#partners-section a > img {
+  height: auto;
+}
 #partners-section a:hover {
+  background-color: #f6fafc;
   opacity: 1;
 }
-#partners-section #p1 {
-  background-image: url("../img/rkit.png");
-}
-#partners-section #p2 {
-  background-image: url("../img/ispsystem.png");
-}
-#partners-section #p3 {
-  background-image: url("../img/yandex.png");
-}
-#partners-section #p4 {
-  background-image: url("../img/en+group.png");
-}
-#partners-section #p5 {
-  background-image: url("../img/1ps.png");
-}
-footer {
-  display: flex;
-  justify-content: center;
+footer > .container {
+  align-items: flex-start;
   flex-wrap: wrap;
+}
+footer section {
+  flex-basis: 300px;
+  margin: 0 0.4em;
 }
 footer ul {
   list-style: none;
   line-height: 1.5em;
   padding: 0;
-}
-footer > section {
-  flex-basis: 240px;
-  margin: 0 0.5em;
 }
